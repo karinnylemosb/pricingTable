@@ -1,0 +1,369 @@
+    .background {
+        background-image: url("imagens/retangulo.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        /*definiu a largura do retângulo*/
+        height: 130%;
+        /*definiu a altura a mais que o back-color ia aparecer*/
+        background-color: #E5E5E5;
+    }
+    
+    .grandearea {
+        position: absolute;
+        /* tira a linha branco do redor*/
+        left: 0px;
+        top: 0px;
+        color: #1D539E;
+        width: 1440px;
+        height: 450px;
+    }
+    
+    .container {
+        display: grid;
+        background-position: 0 0;
+        grid-template-areas: "caixa1 caixa2 caixa3";
+        grid-template-columns: 20rem 20rem 20rem;
+        grid-template-rows: 200px 200px 200px;
+        padding: 3rem 8rem 3rem;
+        /* definiu a posição do container no centro*/
+        font-size: 30px;
+        width: 100%;
+        height: 100%;
+    }
+    /* ORGANIZANDO AS CAIXAS FIXAS*/
+    
+    .caixa1 {
+        grid-area: caixa1;
+        width: 355px;
+        height: 470px;
+        margin: 0 0em;
+        border-radius: 8px;
+        border: 0px;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .caixa2 {
+        grid-area: caixa2;
+        width: 355px;
+        height: 470px;
+        background-position: absolute;
+        margin: 0 2em;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .retyellow {
+        position: absolute;
+        left: 31.6rem;
+        top: 13.4rem;
+    }
+    
+    .caixa3 {
+        grid-area: caixa3;
+        width: 355px;
+        height: 470px;
+        margin: 0 4em;
+        border-radius: 8px;
+        border: 0px;
+        background-color: rgb(255, 255, 255);
+    }
+    /* CABEÇALHO*/
+    
+    .text1 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+    }
+    
+    .text2 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+    /* CONFIGURAÇÕES EM COMUM*/
+    
+    .table1title,
+    .table1text1,
+    .table1text2,
+    .table1text3,
+    .table1text4,
+    .table2title,
+    .table2text1,
+    .table2text2,
+    .table2text3,
+    .table2text4,
+    .table3title,
+    .table3text1,
+    .table3text2,
+    .table3text3,
+    .table3text4 {
+        position: absolute;
+        font-family: 'Open Sans', sans-serif;
+        word-wrap: break-word;
+        /*line-height (px) é o espaçamento*/
+        /*acima configura o tamanho da caixa de texto (width e height) e aqui quebra o texto*/
+    }
+    /* TEXTOS CAIXA1*/
+    
+    .table1title {
+        font-size: 18px;
+        margin-left: 30px;
+        padding-top: 1.5rem;
+    }
+    
+    .table1text1 {
+        font-size: 36px;
+        margin-left: 30px;
+        padding-top: 3rem;
+        /* fixou no cantinho superior*/
+        color: black;
+    }
+    
+    .table1text2 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 30px;
+        padding-top: 7.5rem;
+        color: #828799;
+        line-height: 19px;
+        width: 310px;
+        height: 10em;
+    }
+    
+    .table1text3 {
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 60px;
+        padding-top: 180px;
+        color: #828799;
+        line-height: 19px;
+        width: 294px;
+        height: 5em;
+    }
+    
+    .table1text4 {
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 60px;
+        padding-top: 230px;
+        color: #828799;
+        line-height: 19px;
+        width: 294px;
+        height: 5em;
+    }
+    
+    .vetor1 {
+        position: absolute;
+        margin-left: 30px;
+        padding-top: 200px;
+    }
+    
+    .vetor2 {
+        position: absolute;
+        margin-left: 30px;
+        padding-top: 250px;
+    }
+    
+    .button1 {
+        background-color: white;
+        position: absolute;
+        width: 296px;
+        height: 49px;
+        top: 35rem;
+        left: 10rem;
+        border: 1px solid #1D539E;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        color: #1D539E;
+    }
+    /* TABELA 2  TABELA 2  TABELA 2  TABELA 2  TABELA 2  TABELA 2  TABELA 2  TABELA 2 */
+    
+    .table2title {
+        font-size: 18px;
+        margin-left: 420px;
+        padding-top: 1.5rem;
+        color: #1D539E;
+        z-index: 1;
+        /* posiciona a camada. botou ele acima da imagem amarela*/
+    }
+    
+    .table2text1 {
+        font-size: 36px;
+        margin-left: 410px;
+        padding-top: 4rem;
+        /* fixou no cantinho superior*/
+        color: black;
+    }
+    
+    .table2text2 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 410px;
+        padding-top: 7.5rem;
+        color: #828799;
+        line-height: 19px;
+        width: 310px;
+        height: 10em;
+    }
+    
+    .table2text3 {
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 430px;
+        padding-top: 180px;
+        color: #828799;
+        line-height: 19px;
+        width: 294px;
+        height: 5em;
+    }
+    
+    .table2text4 {
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 430px;
+        padding-top: 230px;
+        color: #828799;
+        line-height: 19px;
+        width: 294px;
+        height: 5em;
+    }
+    
+    .vetor3 {
+        position: absolute;
+        margin-left: 410px;
+        padding-top: 200px;
+    }
+    
+    .vetor4 {
+        position: absolute;
+        margin-left: 410px;
+        padding-top: 250px;
+    }
+    
+    .button2 {
+        background-color: #1D539E;
+        position: absolute;
+        width: 296px;
+        height: 49px;
+        top: 35rem;
+        left: 33.5rem;
+        border: 1px solid #1D539E;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        color: #ffffff;
+    }
+    
+    .popular {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 24px;
+        position: absolute;
+        width: 94px;
+        height: 32px;
+        left: 735px;
+        top: 240px;
+        background: #1D539E;
+        border-radius: 40px;
+        color: white;
+        z-index: 1;
+    }
+    /* TABELA 3  TABELA 3  TABELA 3  TABELA 3  TABELA 3  TABELA 3  TABELA 3  TABELA 3 */
+    
+    .table3title {
+        font-size: 18px;
+        margin-left: 800px;
+        padding-top: 1.5rem;
+        color: #000000;
+    }
+    
+    .table3text1 {
+        font-size: 36px;
+        margin-left: 800px;
+        padding-top: 3rem;
+        color: black;
+    }
+    
+    .table3text2 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 800px;
+        padding-top: 7.5rem;
+        color: #828799;
+        line-height: 19px;
+        width: 310px;
+        height: 10em;
+    }
+    
+    .table3text3 {
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 810px;
+        padding-top: 180px;
+        color: #828799;
+        line-height: 19px;
+        width: 294px;
+        height: 5em;
+    }
+    
+    .table3text4 {
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 810px;
+        padding-top: 230px;
+        color: #828799;
+        line-height: 19px;
+        width: 294px;
+        height: 5em;
+    }
+    
+    .vetor5 {
+        position: absolute;
+        margin-left: 790px;
+        padding-top: 200px;
+    }
+    
+    .vetor6 {
+        position: absolute;
+        margin-left: 790px;
+        padding-top: 250px;
+    }
+    
+    .button3 {
+        background-color: white;
+        position: absolute;
+        width: 296px;
+        height: 49px;
+        top: 35rem;
+        left: 57.5rem;
+        border: 1px solid #1D539E;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        color: #1D539E;
+    }
+    
+    @media screen and (min-width: 800px) {
+        .background {
+            margin: 1em 2em;
+        }
+    }
